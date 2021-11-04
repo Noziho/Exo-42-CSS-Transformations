@@ -1,0 +1,101 @@
+html {
+    font-size: 62.5%;
+}
+
+.container {
+    margin-left: 10rem;
+    margin-top: 20rem;
+    width: 300px;
+    height: 300px;
+    border: solid 1px black;
+    transform-origin: center center;
+    transform: rotate(-35deg);
+    background: darkgray;
+}
+
+.container >p {
+    transform: rotate(125deg);
+}
+
+.container-trans {
+    margin-top: 15rem;
+    border: dashed 2px black;
+    width: 200px;
+    height: 200px;
+}
+
+.translation {
+    width: 200px;
+    height: 200px;
+    border: 1px dashed black;
+    background: indianred;
+    transform-origin: top;
+    transform: translate(-35px, -35px);
+}
+
+.container-mise {
+    position: absolute;
+    border: solid 5px black;
+    height: 300px;
+    width: 300px;
+    z-index: 99;
+    background: red;
+    margin-left: 10rem;
+}
+
+.container2 {
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    background: red;
+    transform: scale(1.50);
+    margin-top: 20rem;
+    margin-left: 10rem;
+}
+
+.oblique {
+    margin-top: 25rem;
+    margin-left: 20rem;
+    width: 300px;
+    height: 300px;
+    background: lightskyblue;
+    border: 1px solid black;
+    transform: skew(30deg, 45deg);
+}
+
+@media screen and (max-width: 600px) {
+    .oblique {
+        width: 150px;
+        height: 150px;
+    }
+
+}
+
+@media screen and (max-width: 490px){
+    .container {
+        width: 150px;
+        height: 150px;
+    }
+
+    .container2 {
+        width: 150px ;
+        height: 150px ;
+    }
+
+    .container-mise {
+        width: 150px;
+        height: 150px;
+    }
+
+    .oblique {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .oblique {
+        width: 80px;
+        height: 80px;
+    }
+}
